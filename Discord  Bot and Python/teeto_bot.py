@@ -85,18 +85,6 @@ async def on_message(message):
 		await client.send_message(message.channel, embed=embed)
 	else:
 		await client.process_commands(message)
-
-@client.event #gang gang fun
-async def on_message(message):
-	if message.content.startswith('Gang gang'):
-		await client.send_message(message.channel, 'Gang Gang :gun:')
-	elif message.content.startswith('gang gang'):
-		await client.send_message(message.channel, 'Gang Gang :gun:')
-	elif message.content.startswith('ganggang'):
-		await client.send_message(message.channel, 'Gang Gang :gun:')
-	else:
-		await client.process_commands(message)
-	
 		
 @client.command()
 async def bitcoin():
