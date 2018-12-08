@@ -10,7 +10,7 @@ from discord.ext.commands import Bot
 
 BOT_PREFIX = ('?')
 TOKEN = **
-RIOTAPI = 'RGAPI-1382429f-f16b-4610-b17e-70510bc9a0a4'
+RIOTAPI = **
 
 client = Bot(command_prefix=BOT_PREFIX)
 
