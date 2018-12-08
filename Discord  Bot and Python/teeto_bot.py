@@ -9,7 +9,7 @@ from discord import Game
 from discord.ext.commands import Bot
 
 BOT_PREFIX = ('?')
-TOKEN = "NTE1MjY4MTE0MDg3NDExNzEy.DtkKVQ.9Qx8N25CDzUkQ1CQe2agsM0KvaQ"
+TOKEN = **
 RIOTAPI = 'RGAPI-1382429f-f16b-4610-b17e-70510bc9a0a4'
 
 client = Bot(command_prefix=BOT_PREFIX)
