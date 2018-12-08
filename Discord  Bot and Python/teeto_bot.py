@@ -95,7 +95,7 @@ async def bitcoin():
 
 @client.command()
 async def champlevel(userID):
-	url = 'https://na1.api.riotgames.com/lol/summoner/v3/summoners/by-name/'+userID+'?api_key=RGAPI-ccad9aae-0ce2-4651-adee-d72d62ba43c5'
+	url = 'https://na1.api.riotgames.com/lol/summoner/v3/summoners/by-name/'+userID+'?api_key=' + RIOTAPI
 	response = requests.get(url)
 	value = response.json()['summonerLevel']
 	await client.say('Your summoner level is: ' + str(value))
