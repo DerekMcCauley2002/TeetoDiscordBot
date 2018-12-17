@@ -18,7 +18,7 @@ client = Bot(command_prefix=BOT_PREFIX)
 client.remove_command('help')
 
 scope = ['https://spreadsheets.google.com/feeds', 'https://www.googleapis.com/auth/drive']
-creds = ServiceAccountCredentials.from_json_keyfile_name('summName-7434bb06a932.json', scope)
+creds = ServiceAccountCredentials.from_json_keyfile_name(**, scope)
 sheetsclient = gspread.authorize(creds)
 sheet = sheetsclient.open("summNameDatabase").sheet1
 
