@@ -12,18 +12,18 @@ from discord.ext.commands import Bot
 
 BOT_PREFIX = ('?')
 TOKEN = \
-	"NTE1MjY4MTE0MDg3NDExNzEy.DtkKVQ.9Qx8N25CDzUkQ1CQe2agsM0KvaQ"
+	**
 RIOTAPI = \
-	'RGAPI-838186e9-3ba6-4085-9f3a-60638a7e00b5'
+	**
 killpass = \
-	"DaddyDman"
+	**
 
 client = Bot(command_prefix=BOT_PREFIX)
 
 client.remove_command('help')
 
 scope = ['https://spreadsheets.google.com/feeds', 'https://www.googleapis.com/auth/drive', 'https://www.googleapis.com/auth/spreadsheets']
-creds = ServiceAccountCredentials.from_json_keyfile_name('summName-6a424b8c9198.json', scope)
+creds = ServiceAccountCredentials.from_json_keyfile_name('**', scope)
 sheetsclient = gspread.authorize(creds)
 sheet = sheetsclient.open("summNameDatabase").sheet1
 
