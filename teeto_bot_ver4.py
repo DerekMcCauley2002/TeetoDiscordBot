@@ -207,7 +207,7 @@ async def leaguerank(ctx, summonerName): #takes the player's name as parameter o
 	value2 = response.json()[0]['rank'] #same thing but for 'rank' in the same section
 	
 	await client.say(summonerName + "'s rank is: " + (value1) + " " + (value2)) #sends a discord message with the summoner name, their rank and tier
-	print('Looked up rank for ' + summonerName) #prints name to console
+	#print('Looked up rank for ' + summonerName) #prints name to console
 
 @client.command(pass_context = True, aliases=['kda'])
 async def matchKDA(ctx, summonerName):
@@ -247,7 +247,7 @@ async def MVPchamp(ctx, summonerName):
 	a,b = mpCIDstr.split(", ")
 	anew = a.replace("(","")
 	bnew = b.replace(")","")
-	print(str(anew) + " is the ID for most played and it was played " + str(bnew) + " times.")
+	#print(str(anew) + " is the ID for most played and it was played " + str(bnew) + " times.")
 	gameverurl = 'https://ddragon.leagueoflegends.com/api/versions.json'
 	GameverResponse = requests.get(gameverurl)
 	grabGameVer = GameverResponse.json()[0]
@@ -257,7 +257,7 @@ async def MVPchamp(ctx, summonerName):
 	anewint = int(anew)
 	championName = num2words[anewint]
 	newchampName = str(championName)
-	print(newchampName)
+	#print(newchampName)
 	await client.say("In " + summonerName + "'s most recent 50 matches, the most frequently played champion is "+newchampName+" at a total of "+bnew+" times.")
 	playeddivide = (int(bnew)/50)
 	playedpercent = (playeddivide * 100)
@@ -278,7 +278,7 @@ async def MVPlast(ctx, summonerName, range):
 	a,b = mpCIDstr.split(", ")
 	anew = a.replace("(","")
 	bnew = b.replace(")","")
-	print(str(anew) + " is the ID for most played and it was played " + str(bnew) + " times.")
+	#print(str(anew) + " is the ID for most played and it was played " + str(bnew) + " times.")
 	gameverurl = 'https://ddragon.leagueoflegends.com/api/versions.json'
 	GameverResponse = requests.get(gameverurl)
 	grabGameVer = GameverResponse.json()[0]
@@ -288,7 +288,7 @@ async def MVPlast(ctx, summonerName, range):
 	anewint = int(anew)
 	championName = num2words[anewint]
 	newchampName = str(championName)
-	print(newchampName)
+	#print(newchampName)
 	mvplastrangestr = str(mvplastrange)
 	await client.say("In " + summonerName + "'s most recent " + mvplastrangestr + " matches, the most frequently played champion is "+newchampName+" at a total of "+bnew+" times.")
 	playeddivide = (int(bnew)/mvplastrange)
@@ -326,7 +326,7 @@ def addChampCount(accID):
 		#print(champNum)
 	count = Counter(champNum)
 	mostCommon = count.most_common(1)
-	print(count)
+	#print(count)
 	#print(mostCommon)
 	return mostCommon
 
@@ -347,7 +347,7 @@ def addChampCountRange(accID, inrange):
 		#print(champNum)
 	count = Counter(champNum)
 	mostCommon = count.most_common(1)
-	print(count)
+	#print(count)
 	#print(mostCommon)
 	return mostCommon
 	return functrange
