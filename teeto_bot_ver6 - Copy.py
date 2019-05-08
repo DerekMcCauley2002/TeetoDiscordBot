@@ -19,11 +19,11 @@ from discord.ext.commands import Bot
 
 BOT_PREFIX = ('?')
 TOKEN = \
-	"NTE1MjY4MTE0MDg3NDExNzEy.Dzqb9A.ms8qGDkJPwOc-zFbTQGsIMYA9pc"
+	**
 RIOTAPI = \
-	'RGAPI-838186e9-3ba6-4085-9f3a-60638a7e00b5'
+	**
 killpass = \
-	"toenditall"
+	**
 
 client = Bot(command_prefix=BOT_PREFIX)
 
